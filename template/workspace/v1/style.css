@@ -1,0 +1,64 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body { 
+    background: #111;
+    overflow:hidden;
+  }
+  canvas {
+    display: block;
+  }
+
+:root {
+    --gradient-color-1: rgba(0, 155, 255, 0.75);
+    --gradient-color-2: rgba(0, 255, 155, 0.85);
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(45deg, var(--gradient-color-1) 0%, var(--gradient-color-2) 15%, var(--gradient-color-1) 55%, var(--gradient-color-2) 70%, var(--gradient-color-1) 100%);
+    background-repeat: no-repeat;
+    width: 1080px;
+    height: 1350px;
+    padding-right: 300;
+}
+
+.myCanvas{
+  width: 1080px;
+  height: 1350px;
+}
+
+#rectangle{
+  position:absolute;
+  top:42px;
+  left:42px; 
+  width: 998px;
+  height: 1268px;
+  background:#FFFAFA;
+  z-index: 1;
+  border-radius: 24px;
+  /*box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;*/
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#canvas-wrap { position:relative } /* Make this a positioned parent */
+
+#text {
+  padding: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+}
+
+#thumbnail{
+  margin: 2.5%;
+  margin-bottom: 0px;
+  width: 95%;
+  border-radius: 12px;
+}
+
+p > span{
+  font-weight: bolder;
+  color: #CA2E55;
+}
